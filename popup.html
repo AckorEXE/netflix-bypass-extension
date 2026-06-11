@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Netflix Household Bypass</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 270px;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      padding: 18px;
+      user-select: none;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      margin-bottom: 16px;
+    }
+
+    .logo {
+            width: 36px;
+                  height: 36px;
+                        background: url('icons/icon.svg') center/cover no-repeat;
+                              border-radius: 8px;
+                                    overflow: hidden;
+                                          flex-shrink: 0;
+                                              }
+                                              
+                                                  .title-wrap h1 {
+                                                        font-size: 13px;
+                                                              font-weight: 700;
+                                                                  }
+                                                                  
+                                                                      .title-wrap p {
+      font-size: 10px;
+      color: #666;
+      margin-top: 2px;
+    }
+
+    .toggle-card {
+      background: #1c1c1c;
+      border-radius: 10px;
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      cursor: pointer;
+      transition: background .15s;
+    }
+
+    .toggle-card:hover {
+      background: #232323;
+    }
+
+    .toggle-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      transition: background .3s, box-shadow .3s;
+      flex-shrink: 0;
+    }
+
+    .dot.on {
+      background: #46d369;
+      box-shadow: 0 0 8px #46d369aa;
+    }
+
+    .dot.off {
+      background: #ff4d4d;
+      box-shadow: 0 0 8px #ff4d4daa;
+    }
+
+    .lbl {
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .slbl {
+      font-size: 11px;
+      color: #666;
+      margin-top: 2px;
+    }
+
+    .switch {
+      position: relative;
+      width: 42px;
+      height: 24px;
+      flex-shrink: 0;
+      border: 0;
+      padding: 0;
+      background: transparent;
+      cursor: pointer;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+    .slider {
+      position: absolute;
+      inset: 0;
+      background: #444;
+      border-radius: 24px;
+      cursor: pointer;
+      transition: background .3s;
+    }
+
+    .slider:before {
+      content: '';
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      left: 3px;
+      top: 3px;
+      background: #fff;
+      border-radius: 50%;
+      transition: transform .3s;
+    }
+
+    .switch.on .slider {
+      background: #E50914;
+    }
+
+    .switch.on .slider:before {
+      transform: translateX(18px);
+    }
+
+    .layers {
+      background: #161616;
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+    }
+
+    .layers h2 {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: .6px;
+      color: #444;
+      margin-bottom: 8px;
+    }
+
+    .layer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 11.5px;
+      color: #aaa;
+      padding: 4px 0;
+      border-bottom: 1px solid #1e1e1e;
+    }
+
+    .layer:last-child {
+      border-bottom: none;
+    }
+
+    .badge {
+      font-size: 9px;
+      background: #222;
+      color: #666;
+      border-radius: 4px;
+      padding: 2px 6px;
+    }
+
+    .footer {
+      font-size: 10px;
+      color: #333;
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    .footer .name {
+      color: #E50914;
+    }
+
+    .footer .heart {
+      color: #ff4d6d;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo" aria-hidden="true"></div>
+    <div class="title-wrap">
+      <h1>Netflix Household Bypass</h1>
+      <p>v5.0.0 · Solo actúa en netflix.com</p>
+    </div>
+  </div>
+
+  <div class="toggle-card" id="card">
+    <div class="toggle-left">
+      <div class="dot on" id="dot"></div>
+      <div>
+        <div class="lbl" id="lbl">Estado del Bypass</div>
+        <div class="slbl" id="slbl">Extensión habilitada</div>
+      </div>
+    </div>
+    <button class="switch on" id="sw" type="button" aria-pressed="true" aria-label="Activar o desactivar bypass">
+      <span class="slider"></span>
+    </button>
+  </div>
+
+  <div class="layers">
+    <h2>💚 Funciones activas</h2>
+    <div class="layer">🕵️ | Elimina restricciones de hogar</div>
+    <div class="layer">🌐 | Soluciona problemas de red</div>
+    <div class="layer">🚫 | Evita verificaciones extra</div>
+    <div class="layer">✨ | Streaming sin interrupciones</div>
+  </div>
+
+  <div class="footer">
+    Hecha por <a href="https://github.com/AckorEXE" target="_blank"><span class="name">Ackor.exe</span></a> <span
+      class="heart">♥</span><br />
+    Diseño simple · Privacidad cuidada
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>

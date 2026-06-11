@@ -1,0 +1,11 @@
+# Extension build artifacts and generated metadata
+_metadata/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Package managers
+node_modules/
+*.log
