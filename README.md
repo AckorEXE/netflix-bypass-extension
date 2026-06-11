@@ -1,23 +1,28 @@
 # Netflix Household Bypass
 
-Extensión de Chrome/Edge para ayudar a automatizar la interacción con el flujo de verificación de Netflix Household.
+Extensión para Chrome y Edge enfocada en automatizar la interacción con el flujo de verificación de Netflix Household.
 
-## Archivos principales
-- `manifest.json` - permisos y configuración de la extensión.
-- `background.js` - reglas de inyección y sincronización del estado.
-- `content.js` - capa DOM para detectar y cerrar intersticiales.
-- `popup.html` / `popup.js` - interfaz del popup y toggle de estado.
-- `rules.json` - reglas DNR para bloquear solicitudes relacionadas.
+## Qué incluye
+- Toggle visual con persistencia del estado.
+- `background.js` para inyección y sincronización.
+- `content.js` como capa de apoyo sobre la interfaz.
+- `rules.json` para reglas DNR compatibles con Edge y Chrome.
+- Iconos y assets listos para empaquetado.
 
 ## Instalación local
 1. Abre `chrome://extensions` o `edge://extensions`.
 2. Activa `Modo de desarrollador`.
-3. Usa `Cargar descomprimida`.
+3. Haz clic en `Cargar descomprimida`.
 4. Selecciona la carpeta del proyecto.
 
-## Notas
-- La carpeta `_metadata/` se genera localmente y no debe subirse al repositorio.
-- Los iconos se incluyen en `icons/`.
+## Estructura
+- `manifest.json` - permisos y configuración principal.
+- `background.js` - lógica de fondo y sincronización.
+- `content.js` - automatización sobre la página.
+- `popup.html` / `popup.js` - interfaz del popup.
+- `rules.json` - reglas de bloqueo de red.
+- `icons/` - iconos de la extensión.
 
-## Estado
-Proyecto en desarrollo.
+## Notas
+- `_metadata/` es generado localmente y no debe subirse.
+- El proyecto está pensado para mantenerse simple y fácil de revisar.
