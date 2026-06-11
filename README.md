@@ -1,6 +1,6 @@
 # Netflix Household Bypass
 
-Extensión para Chrome y Edge enfocada en automatizar la interacción con el flujo de verificación de Netflix Household.
+Esta herramienta está diseñada para simplificar la experiencia de streaming, evitando interrupciones innecesarias en el proceso de verificación de hogar. Con un sistema de gestión activo, ofrece.
 
 ## 📦 ¿Qué incluye?
 - Toggle visual con persistencia del estado.
