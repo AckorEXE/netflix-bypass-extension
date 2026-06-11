@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Netflix Household Bypass",
   "version": "5.0.0",
-  "description": "Bypasses Netflix household verification. Hecha por Ackor.exe ♥",
+  "description": "Bypasses Netflix household verification. Desarrollada por Ackor.exe ♥",
 
   "permissions": [
     "storage",

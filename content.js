@@ -1,5 +1,5 @@
 // content.js — Netflix Household Bypass v5 — DOM Safety Net
-// Hecha por Ackor.exe ♥
+// Desarrollada por Ackor.exe ♥
 // Runs in extension world (document_idle) — handles UI/DOM layer
 
 (function () {

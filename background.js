@@ -1,5 +1,5 @@
 // background.js — Netflix Household Bypass v5
-// Hecha por Ackor.exe ♥
+// Desarrollada por Ackor.exe ♥
 
 // Init storage
 chrome.runtime.onInstalled.addListener(() => {
