@@ -1,6 +1,6 @@
 # Netflix Household Bypass
 
-Esta herramienta está diseñada para simplificar la experiencia de streaming, evitando interrupciones innecesarias en el proceso de verificación de hogar. Con un sistema de gestión activo, ofrece:
+Esta extensión está diseñada para simplificar la experiencia de streaming, evitando interrupciones innecesarias en el proceso de verificación de hogar. Con un sistema de gestión activo, ofrece:
 - ⚡ Activación automática del bypass para un acceso más fluido.
 - 🛡️ Múltiples capas de protección que garantizan estabilidad y confianza en el uso.
 - 🌐 Compatibilidad con cambios de red, manteniendo la sesión sin cortes.
